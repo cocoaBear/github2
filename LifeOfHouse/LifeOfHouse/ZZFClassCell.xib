@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14F1713" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ZZFClassCell" id="dW7-xf-7oW" customClass="ZZFClassCell">
+            <rect key="frame" x="0.0" y="0.0" width="138" height="168"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="138" height="168"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VtL-o8-FhI">
+                        <rect key="frame" x="10" y="10" width="118" height="118"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="VtL-o8-FhI" secondAttribute="height" multiplier="1:1" id="hZ1-oS-GEe"/>
+                        </constraints>
+                        <variation key="widthClass=compact" misplaced="YES">
+                            <rect key="frame" x="10" y="10" width="110" height="110"/>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vg9-cA-YkF">
+                        <rect key="frame" x="10" y="133" width="118" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="T11-ex-21O"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="widthClass=compact" misplaced="YES">
+                            <rect key="frame" x="8" y="124" width="112" height="25"/>
+                        </variation>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="VtL-o8-FhI" firstAttribute="top" secondItem="dW7-xf-7oW" secondAttribute="top" constant="10" id="070-Mf-IVQ"/>
+                <constraint firstItem="vg9-cA-YkF" firstAttribute="top" secondItem="VtL-o8-FhI" secondAttribute="bottom" constant="5" id="5Wb-ud-u4z"/>
+                <constraint firstItem="VtL-o8-FhI" firstAttribute="leading" secondItem="dW7-xf-7oW" secondAttribute="leading" constant="10" id="C0R-3A-rqa"/>
+                <constraint firstItem="VtL-o8-FhI" firstAttribute="trailing" secondItem="vg9-cA-YkF" secondAttribute="trailing" id="VR2-C2-pcC"/>
+                <constraint firstItem="VtL-o8-FhI" firstAttribute="leading" secondItem="vg9-cA-YkF" secondAttribute="leading" id="all-fe-lPy"/>
+                <constraint firstAttribute="trailing" secondItem="VtL-o8-FhI" secondAttribute="trailing" constant="10" id="rPg-jo-B4O"/>
+            </constraints>
+            <size key="customSize" width="211" height="157"/>
+            <connections>
+                <outlet property="iconView" destination="VtL-o8-FhI" id="LbT-xT-Xg6"/>
+                <outlet property="label" destination="vg9-cA-YkF" id="BL7-vh-Jtc"/>
+            </connections>
+            <point key="canvasLocation" x="138" y="174"/>
+        </collectionViewCell>
+    </objects>
+</document>

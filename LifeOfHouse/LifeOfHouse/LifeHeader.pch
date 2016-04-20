@@ -1,0 +1,17 @@
+//
+//  LifeHeader.pch
+//  LifeOfHouse
+//
+//  Created by qf on 16/4/6.
+//  Copyright (c) 2016年 qf. All rights reserved.
+//
+
+#ifndef LifeOfHouse_LifeHeader_pch
+#define LifeOfHouse_LifeHeader_pch
+
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "FMDatabase.h"
+#import "LiftAdress.h"
+
+#endif
